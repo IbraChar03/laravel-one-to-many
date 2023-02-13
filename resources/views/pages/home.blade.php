@@ -6,8 +6,9 @@
         <li>
             <strong>Nickname : </strong> {{$person -> name}} <br>
             <strong>Email Address : </strong>{{$person -> personDetail -> email}} <br>
-            <strong>Posts : </strong> @foreach ($person -> posts as $post)
-        <li>{{$post -> postText}} </li>
+            <strong>Posts : {{$person -> posts -> count()}} </strong> @foreach ($person -> posts as $post)
+
+        <li> {{$post -> postText}} </li>
 
         @endforeach
         </li>
