@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
 <div class="cont">
-    <h1>POSTS</h1>
+    <h1>ALL POSTS</h1>
     <ul>
         @foreach ($posts as $post)
         <li>

@@ -1,6 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
 <div class="cont">
+    <a href="{{route('posts')}}"><span class=link>POSTS</span> </a>
     <ul>
         @foreach ($persons as $person)
         <li>
