@@ -16,7 +16,7 @@ class postSeeder extends Seeder
      */
     public function run()
     {
-        Post::factory()->count(50)->make()->each(function ($post) {
+        Post::factory()->count(150)->make()->each(function ($post) {
             $person = Person::inRandomOrder()->first();
             $post->person()->associate($person);
             $post->save();
